@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/principal.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">   
+</head>
+<body>
+  <div id="header">
+      <div class="container">
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Hi, I'm <br><span>Rafael Rocha</span></h1>
+        </div>
+          <nav>
+              <ul id="sidemenu">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Skills</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+      </div>
+  </div>
+  <!-- -----------about---------- -->
+  <div id="about">
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="/img/2.png">
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                    <br> 
+                    Hi there! My name is Rafael Rocha. I'm a skilled front-end developer.
+                    </br>
+                    I started programming in 2019 during my graduation in Administration and Business. 
+                    I know... It sounds a little strange... I started studying business and now I'm a programmer? 
+                    Yes, and one of the good ones!
+                    My first project was related to the creation of Web-Sites for small entrepreneurs.
+                    Even with a small portfolio, I was called to work in the Growth and Products area for a small startup, creating beautiful and efficient interfaces.
+                    The main thing that sets me apart from other programmers is that I love to learn more about the business itself,
+                    which means all my solutions are based on their needs.
+                  </p>
+  
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+      
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                          <li><span>Programming Skills</span><br>JavaScript, HTML, React, CSS & Angular.</li>
+                          <li><span>Design Skills</span><br> Figma, Canva </li>
+                          <li><span>Analytics Skills</span><br>DataStudio, Google Analytics.</li>
+                      </ul>
+                  </div>
+          
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ----------portfolio------------ -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="img/work-1.png">
+          <div class="layer">
+            <h3>Inventa.Shop</h3>
+            <p>B2B platform</p>
+            <a href="https://inventa.shop/"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/work-2.png">
+          <div class="layer">
+            <h3>Traje.App</h3>
+            <p>Landing page for a mobile app</p>
+            <a href="https://traje.app/"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/work-4.png">
+          <div class="layer">
+            <h3>Tracking system using Google APIs</h3>
+            <p>Live Monitoring System</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ---------services---------------- -->
+  <div id="services">
+      <div class="container">
+          <h1 class="sub-title">Skills</h1>
+          <div class="services-list">
+              <div>
+                  <i class="fas fa-code"></i>
+                  <h2>Front-End Developer by Alura</h2>
+                  <p>I have great experience in creating solutions to optimize and facilitate experiences.</p>
+                  <a href="#">Learn more</a>
+              </div>
+              <div>
+                  <i class="fas fa-crop-alt"></i>
+                  <h2>Scrum Methodology</h2>
+                  <p>I am able to set practices and roles that must be involved during the software development process.  </p>
+                  <a href="#">Learn more</a>
+              </div>
+              <div>
+                  <i class="fab fa-app-stogre"></i>
+                  <h2>Analytics Skills</h2>
+                  <p> Ability to collect, organize, visualize, and assimilate data. </p>
+                  <a href="#">Learn more</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ----------contact------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fas fa-paper-plane"></i> contato.rr21@gmail.com</p>
+                  <p><i class="fas fa-phone-square-alt"></i> +55 21 994851202</p>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/profile.php?id=100005597473580"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/rafaelcr98/"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/rafaelcamararocha/"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                  <a href="img/Currículo - Rafael Câmara Rocha (1)1.jpg" download class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Copyright © Rafael Camara Rocha. </p>
+      </div>
+  </div>
+  
+  
+  
+  <script>
+  
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+  
+      function opentab(tabname){
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+      }
+  
+  </script>
+  
+  <script>
+  
+      var sidemeu = document.getElementById("sidemenu");
+  
+      function openmenu(){
+          sidemeu.style.right = "0";
+      }
+      function closemenu(){
+          sidemeu.style.right = "-200px";
+      }
+  
+  </script>
+  
+  </body>
+<script src="/script/scriptTransition.js"></script>
+</html>
