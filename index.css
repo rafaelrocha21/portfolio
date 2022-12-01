@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body{
+  --color-background:#1d1d1d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d1d1d;
+    font-family: 'Exo', sans-serif;
+}
+
+.cover {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: -100vw;
+  z-index: 1000;
+}
+.transition.slide .cover1 {
+  background-color:black;
+  animation: slide 0.3s ease-in-out forwards;
+}
+.transition.slide .cover2 {
+  background-color: rgb(35, 35, 35);
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.transition.slide .cover3 {
+  background-color: #1d1d1d;
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+@keyframes slide {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #21f298;
+    text-decoration: none;
+    font-size: 24;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+a:hover{
+    color: #1d1d1d;
+    background-color: #21f298;
+    box-shadow: 0 0 10px #21f298, 0 0 40px #21f298, 0 0 80px #21f298;
+    transition-delay: 1s;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1)
+{
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(1)
+{   
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(3)
+{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(3)
+{   
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+a span:nth-child(2)
+{
+    top:-100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(2)
+{   
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(4)
+{
+    bottom:-100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(4)
+{   
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
